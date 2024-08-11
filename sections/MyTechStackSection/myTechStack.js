@@ -7,11 +7,14 @@ const TechIUseSection = ({ darkMode }) => {
       {/* tech I use section */}
       <div className='text-center'>
         <p className='text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl'>
-          Tech I use
+          Technologies I Work With
         </p>
         <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap items-center'>
           {techIUseIcons(darkMode).map((tech) => (
-            <div className='basis animate-pulse flex-1 w-24 h-24'>
+            <div
+              className='basis animate-pulse flex-1 w-24 h-24'
+              key={tech.icon}
+            >
               {tech.icon}
             </div>
           ))}

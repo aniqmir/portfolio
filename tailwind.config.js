@@ -11,6 +11,9 @@ module.exports = {
       fontFamily: {
         burtons: 'burtons',
       },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      },
     },
   },
   plugins: [],

@@ -70,7 +70,7 @@ export const projects = [
     ],
   },
   {
-    name: 'Spare Parts Transactional Portal',
+    name: 'Inventory Transactional Portal',
     technologiesUsed: ['React.js', 'Redux Toolkit', 'Firebase', 'Material-UI'],
     overview:
       'Developed a transactional portal for a spare parts company, focusing on inventory management, stock tracking, profit and expenditure calculations, and invoice generation. The application was built using React.js, with state management handled by Redux Toolkit. Firebase served as the backend, and Material-UI was utilized for a clean, responsive user interface.',
@@ -84,6 +84,7 @@ export const projects = [
   },
   {
     name: 'Mtronic Web Portal for Home Automation',
+    link: 'https://portal.mtronic.pk/',
     technologiesUsed: [
       'React.js',
       'Material-UI',
@@ -107,7 +108,8 @@ export const projects = [
     ],
   },
   {
-    name: 'Mtronic Marketing Website',
+    name: 'Mtronic Website',
+    link: 'https://www.mtronic.pk/',
     technologiesUsed: [
       'Next.js',
       'Tailwind CSS',
@@ -126,6 +128,7 @@ export const projects = [
   },
   {
     name: 'MRS Technologies Website',
+    link: 'https://www.mrs-technologies.com/',
     technologiesUsed: [
       'Next.js',
       'Tailwind CSS',

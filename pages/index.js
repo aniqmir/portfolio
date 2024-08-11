@@ -6,7 +6,7 @@ import { BsFillMoonStarsFill } from 'react-icons/bs';
 
 // utils
 import ProjectsSection from '../sections/ProjectsSection/projectsSection';
-import TechIUseSection from '../sections/TechIUseSection/techIUseSection';
+import MyTechStackSection from '../sections/MyTechStackSection/myTechStack';
 import IntroductionSection from '../sections/IntroductionSection/introductionSection';
 
 const Home = () => {
@@ -61,8 +61,8 @@ const Home = () => {
           <IntroductionSection darkMode={darkMode} />
         </section>
 
-        {/* tech I use section */}
-        <TechIUseSection darkMode={darkMode} />
+        {/* tmy tech stack section */}
+        <MyTechStackSection darkMode={darkMode} />
 
         {/* projects section */}
         <ProjectsSection darkMode={darkMode} />

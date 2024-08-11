@@ -1,11 +1,5 @@
-import Image from 'next/image';
-
 import { SiGit } from 'react-icons/si';
 import { AiFillLinkedin } from 'react-icons/ai';
-
-// dev-image
-import DevAniqDark from '../../public/aniq-dev-dark.png';
-import DevAniqLight from '../../public/aniq-dev-light.png';
 
 const IntroductionSection = ({ darkMode }) => (
   <div className='text-center lg:p-10 py-10'>
@@ -28,14 +22,6 @@ const IntroductionSection = ({ darkMode }) => (
       <a href='https://github.com/aniqmir' target='_blank'>
         <SiGit />
       </a>
-    </div>
-    <div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full w-40 h-40 relative overflow-hidden mt-20 md:h-96 md:w-96'>
-      <Image
-        alt='Dev Aniq'
-        src={darkMode ? DevAniqLight : DevAniqDark}
-        layout='fill'
-        objectFit='cover'
-      />
     </div>
   </div>
 );
