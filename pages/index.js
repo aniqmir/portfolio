@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 
 // utils
+import Footer from '../sections/Footer/footer';
 import ProjectsSection from '../sections/ProjectsSection/projectsSection';
 import MyTechStackSection from '../sections/MyTechStackSection/myTechStack';
 import IntroductionSection from '../sections/IntroductionSection/introductionSection';
@@ -25,7 +26,7 @@ const Home = () => {
 
   return (
     // main container
-    <div className={darkMode ? 'dark' : ''}>
+    <div className={`${darkMode ? 'dark' : ''}`}>
       {/* head section */}
       <Head>
         <title>
@@ -67,6 +68,7 @@ const Home = () => {
         {/* projects section */}
         <ProjectsSection darkMode={darkMode} />
       </main>
+      <Footer darkMode={darkMode} />
     </div>
   );
 };

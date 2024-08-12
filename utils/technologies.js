@@ -39,18 +39,21 @@ export const technologies = (darkMode) => ({
 });
 
 export const techIUseIcons = (darkMode) => [
-  { icon: <FaReact color='#087ea4' size={100} /> },
+  { icon: <FaReact color='#087ea4' size={100} />, id: 1 },
   {
     icon: <TbBrandNextjs color={darkMode ? '#fff' : '#000'} size={100} />,
+    id: 2,
   },
-  { icon: <SiTailwindcss color='#046d80' size={100} /> },
-  { icon: <SiMaterialui color='#007fff' size={100} /> },
-  { icon: <SiJest color='#15c213' size={100} /> },
+  { icon: <SiTailwindcss color='#046d80' size={100} />, id: 3 },
+  { icon: <SiMaterialui color='#007fff' size={100} />, id: 4 },
+  { icon: <SiJest color='#15c213' size={100} />, id: 5 },
   {
     icon: <SiGit color={darkMode ? '#fff' : '#000'} size={100} />,
+    id: 6,
   },
-  { icon: <DiHtml5 color='#dd4b25' size={100} /> },
+  { icon: <DiHtml5 color='#dd4b25' size={100} />, id: 7 },
   {
     icon: <DiFirebase color={darkMode ? '#fff' : '#000'} size={100} />,
+    id: 8,
   },
 ];
