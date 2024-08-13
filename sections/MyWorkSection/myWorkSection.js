@@ -5,11 +5,11 @@ import Carousel from '../../components/Carousel';
 import { projects } from '../../utils/projects';
 import { technologies } from '../../utils/technologies';
 
-const ProjectsSection = ({ darkMode }) => {
+const MyWorkSection = ({ darkMode }) => {
   return (
-    <section className='py-10' id='projects'>
+    <section className='py-10' id='my-work'>
       <p className='text-5xl text-center py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl'>
-        Projects
+        My Work
       </p>
       <div className='py-10'>
         <Carousel>
@@ -65,4 +65,4 @@ const ProjectsSection = ({ darkMode }) => {
   );
 };
 
-export default ProjectsSection;
+export default MyWorkSection;

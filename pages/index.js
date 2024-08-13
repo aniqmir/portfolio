@@ -2,11 +2,11 @@ import Head from 'next/head';
 import { useState } from 'react';
 
 // icons
-import { BsFillMoonStarsFill } from 'react-icons/bs';
+import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs';
 
 // utils
 import Footer from '../sections/Footer/footer';
-import ProjectsSection from '../sections/ProjectsSection/projectsSection';
+import MyWorkSection from '../sections/MyWorkSection/myWorkSection';
 import MyTechStackSection from '../sections/MyTechStackSection/myTechStack';
 import IntroductionSection from '../sections/IntroductionSection/introductionSection';
 
@@ -41,11 +41,15 @@ const Home = () => {
           <nav className='py-10 mb-12 flex justify-between dark:text-white'>
             <h1 className='font-burtons text-xl'>developedbyaniq</h1>
             <ul className='flex items-center'>
-              <li>
-                <BsFillMoonStarsFill
-                  onClick={() => setDarkMode(!darkMode)}
-                  className=' cursor-pointer text-2xl hover:animate-spin'
-                />
+              <li
+                className='cursor-pointer text-2xl'
+                onClick={() => setDarkMode(!darkMode)}
+              >
+                {darkMode ? (
+                  <BsFillSunFill className='animate-spin' />
+                ) : (
+                  <BsFillMoonStarsFill className='animate-spin' />
+                )}
               </li>
               <li>
                 <button
@@ -66,7 +70,7 @@ const Home = () => {
         <MyTechStackSection darkMode={darkMode} />
 
         {/* projects section */}
-        <ProjectsSection darkMode={darkMode} />
+        <MyWorkSection darkMode={darkMode} />
       </main>
       <Footer darkMode={darkMode} />
     </div>
